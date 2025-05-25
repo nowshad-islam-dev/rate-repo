@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import { Link } from 'react-router-native';
 
 import AppBarTab from './AppBarTab';
@@ -6,12 +6,14 @@ import AppBarTab from './AppBarTab';
 const AppBar = () => {
   return (
     <View style={styles.container}>
-      <Link to="/" style={styles.link}>
-        <AppBarTab tabName="Repositories" />
-      </Link>
-      <Link to="/sign-in" style={styles.link}>
-        <AppBarTab tabName="Sign in" />
-      </Link>
+      <ScrollView horizontal>
+        <Link to="/" style={styles.link}>
+          <AppBarTab tabName="Repositories" />
+        </Link>
+        <Link to="/sign-in" style={styles.link}>
+          <AppBarTab tabName="Sign in" />
+        </Link>
+      </ScrollView>
     </View>
   );
 };
