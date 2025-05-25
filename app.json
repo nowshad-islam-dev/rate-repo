@@ -20,10 +20,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.nowshadislamdev.raterepo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "owner": "nowshad-islam-dev",
+    "extra": {
+      "eas": {
+        "projectId": "f72cde65-afb4-4681-8b63-4ae40b6ad493"
+      }
     }
   }
 }
